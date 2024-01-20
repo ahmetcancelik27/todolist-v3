@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: sans-serif; */
+}
+
+body {
+  width: 80%;
+  min-height: 100%;
+  margin: 32px auto;
+  font-family: 'Nanum Pen Script';
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+/* HEADER AND FORM */
+.biggest_container {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.title {
+  margin-top: 10px;
+}
+
+.date {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  flex-direction: column;
+  height: 30px;
+}
+.header,
+.todo_form {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  background-color: bisque;
+  padding: 2px 4px;
+  border-radius: 0 25px 0 0;
+}
+
+h2 {
+  align-items: center;
+}
+
+.hour {
+  align-items: center;
+  margin-left: 20px;
+}
+.todo_div {
+  display: flex;
+}
+
+input::placeholder {
+  font-size: 0.8rem;
+}
+
+.main_todo_input {
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.add_todo_button {
+  padding: 5px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  outline: none;
+  width: 30px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.add_todo_button:hover {
+  background-color: rgb(171, 176, 180);
+}
+
+.date,
+h2 {
+  text-align: center;
+}
+/* TODOS */
+/* MAIN TODOS */
+
+.all_todo_container {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  /* background-color: rgb(247, 199, 141); */
+  background-color: #fcfcb1;
+  padding: 2px 4px;
+  border-radius: 0 0 25px 0;
+}
+
+.each_todo_element {
+  margin-top: 10px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-bottom: 1px solid gray;
+}
+.main_todo_element {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: rgb(255, 228, 100);
+}
+
+.main_todo_element:hover {
+  background-color: rgb(245, 212, 48);
+}
+
+.main_todo_left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_todo_left,
+span {
+  width: 300px;
+}
+
+.main_todo_cb:checked ~ .main_todo_text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.sub_todo_cb:checked ~ .sub_todo_text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.main_todo_text {
+  margin-left: 5px;
+  width: 250px;
+}
+
+.main_todo_right {
+  display: flex;
+}
+
+.main_todo_edit {
+  background-color: #ffc107;
+}
+
+.main_todo_delete,
+.main_todo_save {
+  margin-left: 5px;
+}
+
+.main_todo_delete,
+.sub_todo_delete {
+  background-color: #dc3545;
+}
+.main_todo_delete:hover {
+  background-color: #da1327;
+}
+
+.main_todo_save {
+  color: #fff;
+}
+
+.main_todo_save,
+.sub_todo_save {
+  display: none;
+  margin-right: 5px;
+  background-color: green;
+  /* border: none; */
+  font-size: 1rem;
+}
+
+.sub_todo_div {
+  display: flex;
+  margin-right: 15px;
+  height: 100%;
+}
+
+.sub_todo_input {
+  padding: 3px;
+  border-radius: 3px 0 0 3px;
+  border: none;
+  outline: none;
+  font-size: 0.7rem;
+  height: 90%;
+  margin: auto;
+}
+
+button {
+  font-family: 'Nanum Pen Script';
+  font-size: 1rem;
+  height: 90%;
+  margin: auto;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.add_sub_todo_button {
+  padding: 3px;
+  border-radius: 0 3px 3px 0;
+  border: none;
+  outline: none;
+  width: 30px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.add_sub_todo_button:hover {
+  background-color: rgb(171, 176, 180);
+}
+
+.sub_todo_input {
+  width: 50px;
+}
+/* .sub_todo_input:hover {
+  width: 80px;
+} */
+.sub_todo_container {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  transition: 0.3 linear;
+}
+
+.displaying {
+  display: none;
+}
+
+.sub_todo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  background-color: rgb(247, 199, 141);
+}
+
+.sub_todo:hover {
+  background-color: bisque;
+}

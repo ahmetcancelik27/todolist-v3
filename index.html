@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="biggest_container">
+      <div class="header">
+        <header class="title">
+          <h2>Todo List</h2>
+          <h3 class="hour"></h3>
+          <div class="date"></div>
+        </header>
+        <form class="main_todo_form">
+          <div class="todo_div">
+            <input
+              type="text"
+              placeholder="type here..."
+              class="main_todo_input"
+            />
+            <button type="submit" class="add_todo_button">+</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="all_todo_container">
+        <div class="empty-list">Your todo list is empty</div>
+        <!-- <div class="each_todo_element">
+          <div class="main_todo_element">
+            <div class="main_todo_left">
+              <input type="checkbox" class="main_todo_cb" />
+              <span class="main_todo_text">Market Alışverişi</span>
+            </div>
+            <div class="main_todo_right">
+              <form class="sub_todo_form">
+                <div class="sub_todo_div">
+                  <input
+                    type="text"
+                    placeholder="type here..."
+                    class="sub_todo_input"
+                  />
+                  <button type="submit" class="add_sub_todo_button">+</button>
+                </div>
+              </form>
+              <button class="main_todo_edit">Edit</button>
+               <button class="main_todo_save">Save</button> 
+              <button class="main_todo_delete">Delete</button>
+            </div>
+          </div>
+          <div class="sub_todo_container">
+            <div class="sub_todo">
+              <div class="sub_todo_left">
+                <input type="checkbox" class="sub_todo_cb" />
+                <span class="sub_todo_text">Ekmek Al</span>
+              </div>
+              <div class="sub_todo-right">
+                <button class="sub_todo_edit">Edit</button>
+                <button class="sub_todo_save">Save</button>
+                <button class="sub_todo_delete">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
